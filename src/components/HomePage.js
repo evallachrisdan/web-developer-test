@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import ProjectList from './ProjectList'
 import ProjectInfo from './ProjectInfo';
 import CategorySection from './CategorySection';
 
@@ -81,7 +80,7 @@ class HomePage extends Component{
                                 showDetail={this.showDetail}/>
                         )
                     })}
-                    
+
                     <ProjectInfo 
                         showModal={this.state.showModal} 
                         project={this.state.project} 
