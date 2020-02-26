@@ -5,9 +5,123 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#2b363f; 
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.project{
+  width: 250px;
+  height: 250px;
+  background: silver;
+  margin: 1rem;
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  transition: transform .2s;;
+}
+
+.project .overlay{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.row .project .title{
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  /* display: none; */
+  overflow: hidden;
+  outline: 0;
+  z-index: 1072;
+  background-color: #2b363f;
+  transition: transform .2s;
+  transform: scale(0);
+}
+
+.modal-content{
+  width: 80%;
+  margin: auto;
+}
+
+.modal-header{
+  text-align: right;
+}
+
+.close-button{
+  background-color: transparent; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+}
+
+.modal-content img{
+  max-width: 100%;
+}
+
+.modal .project-title{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal.show{
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+  padding: 3rem;
+  transform: scale(1);
+}
+
+.category-title{
+  color: #fce515;
+  margin-bottom: 0.5rem;
+}
+
+.category-section p{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.project:hover{
+  transform: scale(1.1);
 }
