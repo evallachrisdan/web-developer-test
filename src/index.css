@@ -16,8 +16,9 @@ body {
 
 .row{
   display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 
