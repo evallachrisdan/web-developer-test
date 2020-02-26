@@ -74,7 +74,7 @@ class HomePage extends Component{
                 <div>
                     {categories.map((c,index) => {
                         return (
-                            <CategorySection 
+                            <CategorySection key={index}
                                 category={c} 
                                 projects={projects} 
                                 showDetail={this.showDetail}/>
